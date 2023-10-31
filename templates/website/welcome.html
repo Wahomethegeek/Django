@@ -1,8 +1,12 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Huawei</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
 <h1>Let us learn about templates</h1>
@@ -11,9 +15,9 @@
 <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque doloribus est eveniet in ipsum magni nemo officia officiis placeat quasi ratione, reiciendis rerum saepe similique tempora temporibus voluptas voluptates!
 </p>
-
+    Class Huawei has  {{ student_numbers }}  number of students
 <p>
- Class Huawei has  {{ student_numbers }}  number of students
+ <img src="{% static 'static/kelvin_w.jpg' %}">
 
 </body>
 </html>

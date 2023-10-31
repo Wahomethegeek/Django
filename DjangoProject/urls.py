@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import details
 from django.contrib import admin
 from django.urls import path
 from mobilis.views import wahome, learn, mobilis, geek, zooms
@@ -23,7 +24,8 @@ urlpatterns = [
     path('', wahome),
     # path('about.html', kelvin),
     path('blog.html', learn),
-    path('details.html', mobilis),
+    #path('details.html', mobilis),
     path('ClassSchedule/<int:id>', geek),
-    path('zoom', zooms, name="zooms")
+    path('zoom', zooms, name="zooms"),
+    path('details', mobilis)
 ]

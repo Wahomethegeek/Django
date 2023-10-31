@@ -9,7 +9,7 @@ class PersonalData(models.Model):
     recording_number = models.IntegerField(default=(2))
 
     def __str__(self):
-        return f"{self.name}: classroom {self.classroom_number} on age{self.age}"
+        return f"classroom {self.classroom_number} "
 
 
 class ClassSchedule(models.Model):
@@ -21,14 +21,9 @@ class ClassSchedule(models.Model):
     def __str__(self):
         return f"{self.topic} - {self.date} - {self.start_time} - {self.classroom}"
 
-
-
-
-#class Huawei(models.Model):
+# class Huawei(models.Model):
 #    topic = models.CharField()
 #    recording_number = models.ForeignKey(PersonalData, on_delete=models.CASCADE)
 
 #    def __str__(self):
 #        return f"{self.name}: recording_number {self.recording_number}"
-
-

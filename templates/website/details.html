@@ -7,18 +7,16 @@
 <body>
 <h1>{{ meeting.topic }}</h1>
 <p>
-  The Class Huawei we are referring to is called {{ meeting.topic }}  and the date is {{ meeting.date }}
-    starting at {{ meeting.start_time }} in {{ meeting.classroom }}
-</p>
-<p>
-    {{ details }}
+  Today we are learning we are learning {{ meeting.topic }}. <br>
+    The date today is {{ meeting.date }} , I am assigned to classroom number {{ meeting.classroom }}
 </p>
 <ul>
-    {% for geek in meeting %}
-        <li>
-
-        </li>
+    {% for topic in details %}
+    <li>
+    {{ topic }}
+    </li>
     {% endfor %}
 </ul>
+
 </body>
 </html>
